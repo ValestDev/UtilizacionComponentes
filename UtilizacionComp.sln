@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilizacionComp", "UtilizacionComp\UtilizacionComp.csproj", "{3542CBAF-68BB-43B6-85E9-65493226AD70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReproductorMultimedia", "UtilizacionComp\ReproductorMultimedia.csproj", "{3542CBAF-68BB-43B6-85E9-65493226AD70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LectorPDF", "LectorPDF\LectorPDF.csproj", "{66450997-F958-4909-B536-7D79A06F1DE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3542CBAF-68BB-43B6-85E9-65493226AD70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3542CBAF-68BB-43B6-85E9-65493226AD70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3542CBAF-68BB-43B6-85E9-65493226AD70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66450997-F958-4909-B536-7D79A06F1DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66450997-F958-4909-B536-7D79A06F1DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66450997-F958-4909-B536-7D79A06F1DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66450997-F958-4909-B536-7D79A06F1DE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

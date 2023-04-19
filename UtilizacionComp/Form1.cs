@@ -10,11 +10,41 @@ using System.Windows.Forms;
 
 namespace UtilizacionComp
 {
-    public partial class Form1 : Form
+    public partial class Frm1 : Form
     {
-        public Form1()
+        private string ruta = "";
+
+
+        public Frm1()
         {
             InitializeComponent();
         }
+
+        private void btn_cargar_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog()==DialogResult.OK)
+            {
+                ruta = openFileDialog1.FileName;
+                lbl_ruta.Text = ruta;
+            }
+        }
+
+        private void btn_reproducir_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.URL = ruta;
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+        }
+
+        private void btn_parar_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.stop();
+        }
+
+        private void btn_pausar_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.pause();
+        }
+
+       
     }
 }
