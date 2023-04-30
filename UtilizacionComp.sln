@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReproductorMultimedia", "UtilizacionComp\ReproductorMultimedia.csproj", "{3542CBAF-68BB-43B6-85E9-65493226AD70}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LectorPDF", "LectorPDF\LectorPDF.csproj", "{66450997-F958-4909-B536-7D79A06F1DE0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navegador WEB", "Navegador WEB\Navegador WEB.csproj", "{152A96F2-D079-43A0-A1A2-367823F553DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilizaciónComponentes", "UtilizaciónComponentes\UtilizaciónComponentes.csproj", "{AC91F429-EA8F-42EF-9AF6-0D997E5C6B67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3542CBAF-68BB-43B6-85E9-65493226AD70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3542CBAF-68BB-43B6-85E9-65493226AD70}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3542CBAF-68BB-43B6-85E9-65493226AD70}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3542CBAF-68BB-43B6-85E9-65493226AD70}.Release|Any CPU.Build.0 = Release|Any CPU
 		{66450997-F958-4909-B536-7D79A06F1DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{66450997-F958-4909-B536-7D79A06F1DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66450997-F958-4909-B536-7D79A06F1DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{152A96F2-D079-43A0-A1A2-367823F553DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{152A96F2-D079-43A0-A1A2-367823F553DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{152A96F2-D079-43A0-A1A2-367823F553DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC91F429-EA8F-42EF-9AF6-0D997E5C6B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC91F429-EA8F-42EF-9AF6-0D997E5C6B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC91F429-EA8F-42EF-9AF6-0D997E5C6B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC91F429-EA8F-42EF-9AF6-0D997E5C6B67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

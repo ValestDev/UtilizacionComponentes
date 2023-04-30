@@ -8,21 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UtilizacionComp
+namespace UtilizaciónComponentes
 {
-    public partial class Frm1 : Form
+    public partial class wReproductor : Form
     {
         private string ruta = "";
-
-
-        public Frm1()
+        public wReproductor()
         {
             InitializeComponent();
         }
 
         private void btn_cargar_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog()==DialogResult.OK)
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 ruta = openFileDialog1.FileName;
                 lbl_ruta.Text = ruta;
@@ -45,9 +44,12 @@ namespace UtilizacionComp
             axWindowsMediaPlayer1.Ctlcontrols.pause();
         }
 
-        private void eventLog1_EntryWritten(object sender, System.Diagnostics.EntryWrittenEventArgs e)
+        private void btn_volver1_Click(object sender, EventArgs e)
         {
-
+            
+            this.Close();
+            
         }
     }
+  
 }
