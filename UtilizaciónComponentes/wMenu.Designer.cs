@@ -73,7 +73,6 @@
             this.Controls.Add(this.btn_reproductor);
             this.Name = "Frm1";
             this.Text = "Menú";
-            this.Load += new System.EventHandler(this.Frm1_Load);
             this.ResumeLayout(false);
 
         }

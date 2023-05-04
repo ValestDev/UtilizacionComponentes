@@ -12,7 +12,8 @@ namespace UtilizaciónComponentes
 {
     public partial class wReproductor : Form
     {
-        private string ruta = "";
+        private string ruta = ""; // Ruta del archivo a reproducir
+
         public wReproductor()
         {
             InitializeComponent();
@@ -20,36 +21,33 @@ namespace UtilizaciónComponentes
 
         private void btn_cargar_Click(object sender, EventArgs e)
         {
-
+            // Abre un cuadro de dialogo para seleccionar un archivo de audio o video
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                ruta = openFileDialog1.FileName;
-                lbl_ruta.Text = ruta;
+                ruta = openFileDialog1.FileName; // Obtiene la ruta del archivo seleccionado
+                lbl_ruta.Text = ruta; // Muestra la ruta en un label
             }
         }
 
         private void btn_reproducir_Click(object sender, EventArgs e)
         {
-            axWindowsMediaPlayer1.URL = ruta;
-            axWindowsMediaPlayer1.Ctlcontrols.play();
+            axWindowsMediaPlayer1.URL = ruta; // Establece la ruta del archivo en el reproductor
+            axWindowsMediaPlayer1.Ctlcontrols.play(); // Reproduce el archivo
         }
 
         private void btn_parar_Click(object sender, EventArgs e)
         {
-            axWindowsMediaPlayer1.Ctlcontrols.stop();
+            axWindowsMediaPlayer1.Ctlcontrols.stop(); // Detiene la reproducción del archivo
         }
 
         private void btn_pausar_Click(object sender, EventArgs e)
         {
-            axWindowsMediaPlayer1.Ctlcontrols.pause();
+            axWindowsMediaPlayer1.Ctlcontrols.pause(); // Pausa la reproducción del archivo
         }
 
         private void btn_volver1_Click(object sender, EventArgs e)
         {
-            
-            this.Close();
-            
+            this.Close(); // Cierra la ventana del reproductor
         }
     }
-  
 }

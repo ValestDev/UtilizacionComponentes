@@ -23,9 +23,10 @@ namespace UtilizaciónComponentes
             axAcroPDF1.src = openFileDialog1.FileName;// Abre el archivo y lo despliega en el visualizador
         }
 
+        //Mensaje emergente donde se le pide una confirmación al usuario para cerrar la ventana
         private void cerrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿Está seguro que desea cerrar el programa?", "Cerrar programa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("¿Está seguro que desea cerrar el programa?", "Cerrar programa", MessageBoxButtons.YesNo, MessageBoxIcon.Question); 
 
             if (result == DialogResult.Yes)
             {
